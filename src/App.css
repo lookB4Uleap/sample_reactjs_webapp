@@ -7,6 +7,91 @@
   pointer-events: none;
 }
 
+.Header {
+  padding: 20px;
+  text-align: left;
+  /* background-color: yellow; */
+}
+
+.Header h1{
+  font-size: 100px;
+  color: #282c34;
+  font-family: fantasy;
+}
+
+.nav{
+  padding: 20px;
+  background-color: #282c34;
+}
+
+.nav div {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row; 
+}
+
+.nav a{
+  padding: 10px;
+  color: yellow;
+  text-decoration: none;
+  /* border-style: solid; */
+}
+
+.nav a:hover{
+  color: white;
+  border-style: solid;
+  border-radius: 5px;
+}
+
+.displist{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.out{
+  padding: 20px;
+}
+
+.in{
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+}
+
+.in div{
+  padding: 10px;
+}
+
+#img {
+  display: none;
+}
+
+#buf{
+  height: 20px;
+}
+
+@media (max-width: 400px) {
+  .nav div{
+    flex-direction: column;
+  }
+  .in{
+    flex-direction: column;
+  }
+  #img2 {
+    display: none;
+  }
+  #img{
+    display: inline;
+  }
+  .Header h1{
+    font-size: 50px;
+  }
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
